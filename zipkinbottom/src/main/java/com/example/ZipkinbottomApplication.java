@@ -25,7 +25,7 @@ public class ZipkinbottomApplication {
     @RequestMapping("/")
     public String home(){
         LOG.log(Level.INFO, "Bottom is being called");
-        return "Hello World.";
+        return "Hello World|BOTTOM.";
     }
 
     @Autowired
