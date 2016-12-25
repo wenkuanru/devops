@@ -33,7 +33,7 @@ public class ZipkincalleeApplication {
     @RequestMapping("/")
     public String callHome(){
         LOG.log(Level.INFO, "Bottom will be called in Callee!");
-        return restTemplate.getForObject("http://localhost:8040", String.class);
+        return restTemplate.getForObject("http://localhost:8040", String.class)+"|CALLEE";
     }
 
     @Bean
