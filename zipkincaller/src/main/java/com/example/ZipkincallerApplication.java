@@ -34,6 +34,7 @@ public class ZipkincallerApplication {
     @RequestMapping("/")
     public String callHome(){
         LOG.log(Level.INFO, "Callee will be called in Caller!");
+
         return restTemplate.getForObject("http://localhost:8030", String.class)+"|CALLER";
     }
 
