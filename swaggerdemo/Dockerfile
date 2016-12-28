@@ -1,9 +1,5 @@
 FROM java:8
-
 MAINTAINER WENKUANRU
-
-ADD C:\Software\swaggerdemo-0.0.1-SNAPSHOT.jar app.jar
-
-EXPOSE 8050
-
+ADD /var/lib/jenkins/workspace/swaggerdemo/swaggerdemo/target/swaggerdemo-0.0.1-SNAPSHOT.jar app.jar
+EXPOSE 9090
 ENTRYPOINT ["java","-jar","/app.jar"]
